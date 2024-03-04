@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.anmpweek1.MainFragment"
-        android:label="Main Screen"
+        android:label="fragment_main"
         tools:layout="@layout/fragment_main" >
         <action
             android:id="@+id/actionGameFragment"
@@ -17,18 +17,15 @@
     <fragment
         android:id="@+id/gameFragment"
         android:name="com.example.anmpweek1.GameFragment"
-        android:label="Game Screen"
+        android:label="fragment_game"
         tools:layout="@layout/fragment_game" >
-        <argument
-            android:name="player_name"
-            app:argType="string" />
         <action
             android:id="@+id/actionResultFragment"
             app:destination="@id/resultFragment" />
+        <argument
+            android:name="player_name"
+            app:argType="string" />
     </fragment>
-    <argument
-        android:name="player_name"
-        app:argType="string" />
     <fragment
         android:id="@+id/resultFragment"
         android:name="com.example.anmpweek1.ResultFragment"
